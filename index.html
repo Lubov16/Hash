@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хеш-функция</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Хеш-функция</h1>
+        <form id="hashForm">
+            <label for="text">Введите сообщение:</label>
+            <textarea id="text" rows="4" required></textarea>
+
+            <label for="key">Введите ключ (32 символа в 16-ричной системе):</label>
+            <input type="text" id="key" required pattern="[0-9a-fA-F]{32}" title="Длина ключа должна быть 32 символа в 16-ричной системе">
+
+            <button type="button" id="hashButton">Вычислить хеш</button>
+        </form>
+
+        <h2>Результат:</h2>
+        <textarea id="result" rows="4" readonly></textarea>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
